@@ -1,0 +1,631 @@
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+
+.container {
+   max-width: 1200px;
+   margin:  0 auto; 
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.input {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    line-height: 24px;
+    padding: 8px 0;
+    padding-left: 35px;
+}
+
+.input-adress {
+    flex: 0.8;
+    color: #BFBFBF;
+    background: url(../img/home.svg) no-repeat  10px center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons__btn {
+    padding: 8px 16px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #595959;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    line-height: 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttons__btn:hover {
+    box-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
+}
+
+.buttons__btn img {
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.buttons__btn-primary {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.buttons__btn-primary:hover {
+    background: #03cbfd;
+}
+
+/* Section promo */
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.promo {
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url(../img/pizza-img.png) no-repeat top -100px right -250px /920px;
+    border-radius: 10px;
+    padding: 68px 70px;
+}
+
+.promo-title {
+    font-size: 39px;
+    line-height: 46px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #302C34;
+}
+
+.promo-text {
+   max-width: 540px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+
+/* Section restautans */
+
+.restaurans {
+    padding-top: 56px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #000;
+    margin-right: 30px;
+}
+
+.input-search {
+    background: url(../img/search.svg) no-repeat  left 10px center;
+    width: 306px;
+    margin-left: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    /* width: 30%; */
+    flex-basis: 31%;
+}
+
+.card__img {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 20px 23px 34px 23px;
+}
+
+.card__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-size: 24px;
+    color: #000;
+}
+
+.card__title_reg {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.card__tag {
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 8px;
+    background: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 32px;
+    flex-wrap: wrap;
+}
+
+.card__rating {
+    margin-right: 26px;
+    font-weight: bold;
+    color: #FFC107;
+}
+
+.card__ingredients {
+    font-size: 17px;
+    line-height: 21px;
+    color: #8C8C8C;  
+}
+
+.card__price {
+    color: #8C8C8C;
+    margin-right: 12px;
+    position: relative;
+}
+
+.card__price:after {
+   position: absolute;
+   content: '';
+   display: block;
+   width: 5px;
+   height: 5px;
+   background: #8C8C8C;
+   top: 50%;
+   transform: translateY(-50%);
+   right: -15px;
+   border-radius: 50%;
+}
+
+.card__category {
+    color: #8C8C8C;
+    margin-left: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card__buttons {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.card__btn {
+    padding: 8px 16px;
+    margin-right: 32px;
+}
+
+.card__price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card__btn span {
+    margin-right: 10px;
+}
+
+.card__btn img {
+    position: relative;
+    top: 2px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    margin-right: auto;
+    margin-left: 35px;
+}
+
+.footer-nav a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.footer-nav li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social__link {
+    display: inline-block;
+}
+
+.footer-social__link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* pointer-events: none; */
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.active {
+    display: flex;
+    transition: all 0.5s ease 0.3s;
+    transform: translateY(0);
+    top: 0;
+}
+
+.modal__dialog {
+    max-width: 780px;
+    width: 95%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.modal__title {
+   font-size: 36px;
+   line-height: 42px;
+   font-weight: 700; 
+}
+
+.modal__close {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 45px;
+}
+
+.food-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  #D9D9D9;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.food-name {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.food-price {
+    margin-left: auto;
+    margin-right: 47px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.counter-button {
+    width: 39px;
+    height: 32px;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #40A9FF;
+    border-radius: 2px;
+    color: #40A9FF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.counter {
+    margin: 0 13px;
+}
+
+.modal__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+.m0dal__price-tag {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FAFAFA;
+    background: #262626;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+/* Media Quaries  */
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background: #FFF1B8 url(../img/pizza-img.png) no-repeat top -100px right -280px /700px;
+    }
+
+    .card__rating  {
+        margin-right: 15px;
+    }
+
+    .card__price, .card__category {
+        font-size: 14px;
+    }
+    
+} 
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .promo {
+       padding: 50px; 
+       background-size: 500px;
+       background-position: center right -200px;
+    }
+
+    .promo-text {
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .card {
+        flex-basis: 49%;
+    }
+
+    .footer-nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .buttons__btn {
+        padding: 8px 10px;
+    }
+
+    .promo {
+        background-size: 400px;
+        background-position: top -80px right -180px;
+    }
+
+    .promo-text {
+        margin-top: 0;
+    }
+
+    .promo-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .card__info {
+        flex-wrap: wrap;
+    }
+
+    .card__rating {
+        width: 100%;
+    }
+
+    .section-heading .card__rating {
+        width: auto;
+    }
+
+
+    .card__title {
+        font-size: 18px;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+
+    .footer-nav li {
+        width: 40%;
+        margin-right: 0;
+    }
+}
+
+    @media (max-width: 577px) {
+        .container {
+            width: 90%;
+        }
+
+        .header {
+            flex-wrap: wrap;
+        }
+
+        .input-adress {
+            order: 5;
+            margin-top: 15px;
+            flex: 1;
+        }
+
+        .promo {
+            background-image: none;
+        }
+
+        .promo-title {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 20px;
+        }
+
+        .card {
+            flex-basis: 100%;
+        }
+
+        .card__image {
+            width: 100%;
+        }
+
+        .footer {
+            padding: 30px 0;
+        }
+
+        .footer-logo {
+            order: 1;
+            margin-right: 15px;
+        }
+
+        .footer-nav {
+            order: 0;
+        }
+
+        .footer-nav li {
+            width: auto;
+        }
+
+        .footer-nav a {
+            font-size: 14px;
+        }
+
+        .footer-social {
+            order: 2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        
+        .buttons__btn {
+            width: 60px;
+        }
+
+        .buttons__btn img {
+            margin-right: 0;
+        }
+
+        .buttons__btn span {
+            display: none;
+        }
+        
+        .promo {
+            padding: 20px;
+        }
+        
+        .section-heading {
+            flex-wrap: wrap;
+        }
+       
+        .footer-content {
+            flex-direction: column;
+        }
+        
+        .footer-logo {
+            order : 0;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        .footer-nav li  {
+            margin-right: 0!important;
+        }
+
+        .footer-nav a {
+            margin-bottom: 10px;
+        }
+
+        .footer-social {
+            margin-top: 10px;
+        }
+    }
+
+
